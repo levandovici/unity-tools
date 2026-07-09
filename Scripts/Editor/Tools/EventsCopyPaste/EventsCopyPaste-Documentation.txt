@@ -1,0 +1,67 @@
+Events Copy Paste - User Documentation
+
+Version: 1.0
+Asset Name: Events Copy Paste
+
+Overview
+
+Events Copy Paste is a Unity Editor tool that allows you to easily copy UnityEvent listeners between GameObjects or MonoBehaviours.
+
+It supports:
+- Drag & Drop workflow
+- Replace or Append modes
+- Works with standard UnityEvents and Unity UI components (Button, Toggle, Slider, etc.)
+- Scans public and [SerializeField] events visible in the Inspector
+
+How to Open the Tool
+
+1. In Unity Editor, go to Tools → Events Copy Paste
+2. The window will open
+
+Using the Window
+
+The window is divided into two main sections: Source and Target.
+
+1. Source Behaviour Section
+- Drag & Drop a GameObject or any MonoBehaviour component into the area.
+- The tool will automatically scan all MonoBehaviours on that GameObject for UnityEvents.
+- A dropdown will show all detected events with listener counts.
+- Use "Clear Source" to reset.
+
+2. Target Behaviour Section
+- Drag & Drop your destination GameObject/component.
+- Select the target event you want to copy into.
+
+Copy Mode
+
+- Replace (default): Clears all existing listeners on the target event before copying.
+- Append: Adds the source listeners to whatever is already on the target event.
+
+Main Action
+
+Copy Selected Event
+- Copies listeners from the selected source event to the selected target event.
+
+Advanced Options
+
+- Clear Selected Target Event Listeners – Removes all listeners from the currently selected target event.
+- Refresh Source Events – Re-scans the source GameObject.
+- Refresh Target Events – Re-scans the target GameObject.
+
+Tips for Best Results
+
+1. Drag & Drop is the fastest way to select objects.
+2. You can drop either a GameObject or a specific MonoBehaviour component.
+3. The tool only shows events that are visible in the Inspector.
+4. Works great for duplicating UI button setups, event systems, or complex interaction logic.
+5. All operations are fully undoable with Ctrl/Cmd + Z.
+
+Common Use Cases
+
+- Copying complex Button OnClick events from a prototype to production prefabs
+- Transferring UnityEvent setups between different versions of a script
+- Quickly duplicating input/response systems
+- Migrating events when refactoring components
+
+Thank you for purchasing Events Copy Paste!
+We hope this tool saves you many hours of manual listener setup.
